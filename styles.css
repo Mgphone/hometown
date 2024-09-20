@@ -35,35 +35,50 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
-  background-color: #d698ad;
+  color: #333;
+  background-color: #d25a79;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #b87a9f;
+  background-color: #a7465f;
   transform: scale(1.05);
 }
 
+.section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
 
 section {
-  padding: 2rem;
-  margin: 1rem;
   background: #fff;
   border-radius: 8px;
   text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  height: 40%;
+}
+
+section h2 {
+  margin-bottom: 1rem;
 }
 
 section p {
-  width: 70vw;
-  margin: 20px auto;
+  margin-bottom: 1rem;
 }
 
-
-img {
-  width: 70vw;
+section img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  border-radius: 8px;
 }
 
 footer {
@@ -85,27 +100,25 @@ footer {
   color: #d698ad;
 }
 
-/* Responsive 2 sizes */
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     width: 95%;
     margin: 5% auto;
     padding: 0;
-
-  }
-
-  nav li {
-    margin: 0;
+    border-radius: 5%;
+    gap: 10px;
   }
 
   nav a {
     display: block;
     text-align: center;
     padding: 1rem;
-    border-radius: 0;
     margin: 0;
   }
+
+
 }
 
 @media (max-width: 480px) {
