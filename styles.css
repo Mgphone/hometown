@@ -47,6 +47,46 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* carousel */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.carousel-buttons button {
+  color: #111;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background-color: #a7465f;
+  transform: scale(1.05);
+}
+
+.carousel-image {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
 .section-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -63,7 +103,7 @@ section {
 }
 
 .section-header {
-  height: 40%;
+  height: 200px;
 }
 
 section h2 {
@@ -75,8 +115,8 @@ section p {
 }
 
 section img {
-  width: 100%;
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
   height: 200px;
   border-radius: 8px;
 }
@@ -118,6 +158,27 @@ footer {
     margin: 0;
   }
 
+  .carousel-container {
+    padding: 1.5rem;
+  }
+
+  .carousel-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .carousel-buttons button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .carousel-image {
+    width: 250px;
+    height: 180px;
+  }
+
+
 
 }
 
@@ -134,5 +195,11 @@ footer {
 
   .up {
     padding: 0.5rem;
+  }
+
+  .carousel-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem
   }
 }
